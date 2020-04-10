@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const config = require('./config.json');
 
 const Platformer = '692842478960771113';
 const CubeRun = '692842377169076234';
@@ -17,7 +18,7 @@ const OwnerID = '206805670874316801';
 const SanctuaryID = '544182787129737226';
 const C3ID = '692739863014801448';
 
-const Prefix = '[]';
+const Prefix = config.prefix;
 
 
 
@@ -200,7 +201,4 @@ bot.on('message', /* action */ (message) => {
 
 });
 
-
-
-
-bot.login('NjY4ODYxMjU5NTQ1OTY4Njcw.Xn3adA.jlFhsT6KHzSVjelTxES3p9xIumg');
+bot.login(config.token);
